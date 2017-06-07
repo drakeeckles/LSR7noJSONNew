@@ -5,7 +5,7 @@
       "type": "kendo-ui-mobile:view",
       "name": "homeView",
       "components": [],
-      "title": "Home View",
+      "title": "Home",
       "addToNavigation": true,
       "icon": "home"
     },
@@ -21,7 +21,7 @@
       "type": "kendo-ui-mobile:view",
       "name": "contactsView",
       "components": [],
-      "title": "Contacts",
+      "title": "AllBuildings",
       "addToNavigation": true,
       "icon": "contacts"
     }
@@ -30,8 +30,8 @@
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
   "view": "homeView",
-  "skin": "nova",
-  "skinMainColor": "#32364c",
+  "skin": "flat",
+  "skinMainColor": "#000000",
   "skinTextColor": "#ffffff",
-  "skinAccentColor": "#ff4350"
+  "skinAccentColor": "#4d8cac"
 }
