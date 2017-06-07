@@ -17,7 +17,7 @@
 </head>
 
 <body id="kendoUiMobileApp">
-    <script src="components/contactsView/index.js"></script>
+    <script src="components/allBuildingsView/index.js"></script>
     <script src="components/settingsView/index.js"></script>
     <script src="components/homeView/index.js"></script>
     <div data-role="layout" data-id="main">
@@ -36,18 +36,8 @@
             </div>
         </header>
     </div>
-
-    <div id="appDrawer" data-role="drawer" data-title="Navigation">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-            </div>
-        </header>
-        <ul id="navigation-container" data-role="listview">
-            <li><a href="components/homeView/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.homeView.title"></span></a></li>
-            <li><a href="components/settingsView/view.html" data-icon="settings"><span class="navigation-link-text" data-bind="text: strings.settingsView.title"></span></a></li>
-            <li><a href="components/contactsView/view.html" data-icon="contacts"><span class="navigation-link-text" data-bind="text: strings.contactsView.title"></span></a></li>
-        </ul>
+    <div id="notify" class="notify-pop-up">
+        <span class="notify-pop-up__content"></span>
     </div>
     <!--  start index html save -->
     <!--  end index html save -->
@@ -55,6 +45,30 @@
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
 
+    <div id="appDrawer" data-role="drawer" data-title="Menu" data-swipe-to-open="false">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <ul id="navigation-container" data-role="listview">
+            <li><a href="components/homeView/view.html" data-icon="home">Home</a></li>
+            <li><a href="components/allBuildingsView/view.html"><i class="fa fa-university" style="margin-left:-3px"></i> All Buildings</a></li>
+            <li>
+                <a onclick="window.open('https://powerschool.lsr7.org', '_blank')"><img src="Img/powerschool-icon-2-1.png" style="width:6%" align="top"> PowerSchool</a>
+            </li>
+            <li><a onclick="window.open('http://www.infofinderi.com/ifi/?cid=L', '_blank')"><i class="fa fa-bus"></i> Transportation</a></li>
+            <li><a href="components/lunch/view.html"><i class="fa fa-cutlery"></i> Lunch</a></li>
+            <li><a href="components/lswhs/view.html">Elementary Schools</a></li>
+            <li class="socialMediaIcons"><a onclick="window.open('https://www.facebook.com/LSR7Schools/', '_blank')"><i class="fa fa-facebook-square"></i></a>
+                <a onclick="window.open('https://twitter.com/LSR7?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&scrlybrkr=66ed0bd3', '_blank')"><i class="fa fa-twitter-square" style="margin-left: 5px;"></i></a>
+            </li>
+
+        </ul>
+    </div>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic" rel="stylesheet" type="text/css">
     <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
 </body>
 

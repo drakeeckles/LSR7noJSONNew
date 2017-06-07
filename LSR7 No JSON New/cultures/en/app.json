@@ -5,12 +5,12 @@
     "qrCodeScan": "Scan"
   },
   "homeView": {
-    "title": "Home View"
+    "title": "Home"
   },
   "settingsView": {
     "title": "Settings"
   },
   "contactsView": {
-    "title": "Contacts"
+    "title": "AllBuildings"
   }
 }

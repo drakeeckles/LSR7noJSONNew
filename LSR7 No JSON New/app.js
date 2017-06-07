@@ -18,12 +18,24 @@
     var bootstrap = function() {
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
-                skin: 'nova',
+                skin: 'flat',
                 initial: 'components/homeView/view.html'
             });
 
             kendo.bind($('.navigation-link-text'), app.navigation.viewModel);
         });
+    };
+
+    $(document).ready(function() {
+
+        app.notification = $("#notify");
+
+    });
+
+    app.showNotification = function(message, time) {
+        var autoHideAfter = time ? time : 3000;
+        app.notification.find('.notify-pop-up__content').html(message);
+        app.notification.fadeIn("slow").delay(autoHideAfter).fadeOut("slow");
     };
 
     if (window.cordova) {
