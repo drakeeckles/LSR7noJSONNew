@@ -607,5 +607,15 @@ i.fa.fa-bars {
     background-color: #4D8CAC!important;
 }
 
+#kendoUiMobileApp > div:nth-child(12) > div.km-content.km-widget.km-scroll-wrapper > div.km-scroll-container > div > div.tab_schools.km-widget.km-tabstrip > button:nth-child(2) {
 
+background-color: #4D8CAC;
+
+}
+
+#kendoUiMobileApp > div:nth-child(12) > div.km-content.km-widget.km-scroll-wrapper > div.km-scroll-container > div > div.tab_schools.km-widget.km-tabstrip > button:nth-child(3) {
+
+background-color: #4D8CAC;
+
+}
 /* END_CUSTOM_CODE_kendoUiMobileApp */
